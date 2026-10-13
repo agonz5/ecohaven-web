@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EcoHaven Group LLC · Wholesale Distributor</title>
+<link rel="icon" href="assets/ecohaven-logo.jpeg">
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<script src="./image-slot.js"></script>
+<style>
+  body { margin: 0; background: #F3F5F8; color: #13243B; font-family: "Hanken Grotesk", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  a { color: #B45309; text-decoration: none; }
+  a:hover { color: #8F420A; }
+</style>
+</helmet>
+<div style="width:100%; overflow-x:hidden; background:#F3F5F8;">
+
+  <div style="background:#FFFFFF; border-bottom:1px solid #DCE2E9;">
+    <div style="max-width:1240px; margin:0 auto; padding:10px clamp(16px,4vw,40px); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px 24px; font-size:13px; color:#4A5B70;">
+      <div>{{ t.topbar }}</div>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 22px;">
+        <a href="mailto:sales@ecohaven.co" style="color:#13243B; font-weight:500;">sales@ecohaven.co</a>
+        <a href="https://wa.me/17868152153" style="color:#13243B; font-weight:500;">WhatsApp +1 (786) 815-2153</a>
+        <div style="display:flex; border:1px solid #CFD7E0; border-radius:2px; padding:2px;">
+          <button onClick="{{ setEn }}" style="border:none; cursor:pointer; font-family:inherit; font-size:12px; font-weight:700; padding:4px 10px; border-radius:2px; background:{{ enBg }}; color:{{ enFg }};">EN</button>
+          <button onClick="{{ setEs }}" style="border:none; cursor:pointer; font-family:inherit; font-size:12px; font-weight:700; padding:4px 10px; border-radius:2px; background:{{ esBg }}; color:{{ esFg }};">ES</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header style="position:sticky; top:0; z-index:30; background:rgba(255,255,255,0.95); backdrop-filter:blur(10px); border-bottom:1px solid #DCE2E9;">
+    <div style="max-width:1240px; margin:0 auto; padding:12px clamp(16px,4vw,40px); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px 24px;">
+      <a href="#top" style="display:block;">
+        <img src="assets/ecohaven-logo-navy.png" alt="ECOHAVEN GROUP LLC" style="height:44px; width:auto; display:block;" />
+      </a>
+      <nav style="display:flex; flex-wrap:wrap; align-items:center; gap:8px clamp(14px,2.4vw,30px); font-size:15px; font-weight:500;">
+        <a href="#categories" style="color:#4A5B70;" style-hover="color:#13243B;">{{ t.nav1 }}</a>
+        <a href="#coverage" style="color:#4A5B70;" style-hover="color:#13243B;">{{ t.nav2 }}</a>
+        <a href="#process" style="color:#4A5B70;" style-hover="color:#13243B;">{{ t.nav3 }}</a>
+        <a href="#inquiry" style="display:inline-block; padding:12px 22px; border-radius:2px; background:#B45309; color:#FFFFFF; font-weight:600;" style-hover="background:#8F420A; color:#FFFFFF;">{{ t.cta }}</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="top" data-screen-label="Hero" style="position:relative; overflow:hidden; background:#1E3A5F;">
+    <div style="position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px); background-size:64px 64px; pointer-events:none;"></div>
+    <div style="position:absolute; inset:0; background:linear-gradient(115deg, #13243B 35%, rgba(30,58,95,0.4) 100%); pointer-events:none;"></div>
+    <div style="position:absolute; top:-180px; right:-120px; width:560px; height:560px; border:1px solid rgba(233,161,91,0.35); transform:rotate(45deg); pointer-events:none;"></div>
+    <div style="position:relative; max-width:1240px; margin:0 auto; padding:clamp(56px,8vw,112px) clamp(16px,4vw,40px) clamp(40px,5vw,56px); display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr)); gap:clamp(32px,5vw,64px); align-items:center;">
+      <div>
+        <div style="display:inline-flex; align-items:center; gap:10px; padding:7px 14px; border:1px solid rgba(255,255,255,0.24); font-size:12px; font-weight:700; letter-spacing:0.12em; color:rgba(255,255,255,0.86);">
+          <span style="width:7px; height:7px; background:#E9A15B;"></span>{{ t.eyebrow }}
+        </div>
+        <h1 style="margin:24px 0 0; font-weight:800; font-size:clamp(36px,5vw,64px); line-height:1.04; letter-spacing:-0.03em; color:#FFFFFF; text-wrap:balance;">{{ t.h1 }}</h1>
+        <p style="margin:24px 0 0; font-size:clamp(17px,1.5vw,19px); line-height:1.6; color:rgba(255,255,255,0.76); max-width:50ch; text-wrap:pretty;">{{ t.sub }}</p>
+        <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:34px;">
+          <a href="#inquiry" style="display:inline-block; padding:16px 28px; background:#B45309; color:#FFFFFF; font-weight:600; font-size:16px;" style-hover="background:#C9620F; color:#FFFFFF;">{{ t.cta }}</a>
+          <a href="#categories" style="display:inline-block; padding:16px 28px; border:1px solid rgba(255,255,255,0.32); color:#FFFFFF; font-weight:600; font-size:16px;" style-hover="border-color:#FFFFFF; color:#FFFFFF;">{{ t.cta2 }}</a>
+        </div>
+      </div>
+      <div style="position:relative; aspect-ratio:5/4; background:#13243B; border:1px solid rgba(255,255,255,0.16);">
+        <image-slot id="ehB-hero" shape="rect" placeholder="Warehouse / showroom photo"></image-slot>
+      </div>
+    </div>
+    <div style="position:relative; max-width:1240px; margin:0 auto; padding:0 clamp(16px,4vw,40px) clamp(48px,6vw,72px);">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr)); gap:1px; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.16);">
+        <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
+          <div style="background:#16294A; padding:22px 24px;">
+            <div style="font-weight:800; font-size:clamp(26px,2.6vw,34px); letter-spacing:-0.02em; color:#FFFFFF;">{{ s.v }}</div>
+            <div style="font-size:14px; color:rgba(255,255,255,0.66); margin-top:4px;">{{ s.l }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" data-screen-label="About" style="background:#FFFFFF; padding:clamp(64px,9vw,112px) clamp(16px,4vw,40px);">
+    <div style="max-width:1240px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:clamp(32px,5vw,72px); align-items:start;">
+      <div>
+        <div style="font-size:13px; font-weight:700; letter-spacing:0.14em; color:#B45309;">{{ t.aboutEyebrow }}</div>
+        <h2 style="margin:16px 0 0; font-weight:800; font-size:clamp(30px,3.6vw,46px); line-height:1.08; letter-spacing:-0.03em; color:#13243B; text-wrap:balance;">{{ t.aboutH }}</h2>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <p style="margin:0; font-size:18px; line-height:1.65; color:#33475F; text-wrap:pretty;">{{ t.aboutP1 }}</p>
+        <p style="margin:0; font-size:18px; line-height:1.65; color:#33475F; text-wrap:pretty;">{{ t.aboutP2 }}</p>
+        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:14px 24px; margin-top:8px; padding:20px 22px; border-radius:2px; background:#F3F5F8;">
+          <div style="flex:1 1 240px; font-size:15px; line-height:1.5; color:#33475F;"><strong style="color:#13243B;">BYGGA Retail Group</strong> — {{ t.groupLine }}</div>
+          <a href="https://bygga.shop" target="_blank" rel="noopener" style="display:inline-block; padding:11px 20px; border-radius:2px; border:1px solid #1E3A5F; color:#1E3A5F; font-weight:600; font-size:14px;" style-hover="background:#1E3A5F; color:#FFFFFF;">bygga.shop →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories" data-screen-label="Categories" style="background:#F3F5F8; padding:clamp(64px,9vw,112px) clamp(16px,4vw,40px);">
+    <div style="max-width:1240px; margin:0 auto;">
+      <div style="display:flex; flex-wrap:wrap; align-items:end; justify-content:space-between; gap:16px 40px; margin-bottom:40px;">
+        <div>
+          <div style="font-size:13px; font-weight:700; letter-spacing:0.14em; color:#B45309;">{{ t.catEyebrow }}</div>
+          <h2 style="margin:16px 0 0; font-weight:800; font-size:clamp(30px,3.6vw,46px); line-height:1.08; letter-spacing:-0.03em; color:#13243B;">{{ t.catH }}</h2>
+        </div>
+        <p style="margin:0; max-width:42ch; font-size:16px; line-height:1.6; color:#4A5B70;">{{ t.catP }}</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr)); gap:16px;">
+        <sc-for list="{{ categories }}" as="c" hint-placeholder-count="6">
+          <div style="background:#FFFFFF; border-radius:2px; padding:28px; display:flex; flex-direction:column; gap:22px; border:1px solid #E1E6EC;" style-hover="border-color:#1E3A5F; box-shadow:0 14px 30px rgba(19,36,59,0.08);">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <div style="width:52px; height:52px; border-radius:2px; background:#1E3A5F; display:flex; align-items:center; justify-content:center;">
+                <div style="width:16px; height:16px; background:#E9A15B; border-radius:{{ c.radius }}; transform:rotate({{ c.rotate }});"></div>
+              </div>
+              <div style="font-size:13px; font-weight:700; color:#A7B2BF;">{{ c.num }}</div>
+            </div>
+            <div>
+              <div style="font-weight:700; font-size:21px; letter-spacing:-0.01em; color:#13243B;">{{ c.label }}</div>
+              <div style="font-size:15px; color:#4A5B70; margin-top:8px; line-height:1.5;">{{ c.note }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Why" style="background:#FFFFFF; padding:clamp(64px,9vw,112px) clamp(16px,4vw,40px);">
+    <div style="max-width:1240px; margin:0 auto;">
+      <div style="font-size:13px; font-weight:700; letter-spacing:0.14em; color:#B45309;">{{ t.whyEyebrow }}</div>
+      <h2 style="margin:16px 0 44px; font-weight:800; font-size:clamp(30px,3.6vw,46px); line-height:1.08; letter-spacing:-0.03em; color:#13243B; max-width:20ch; text-wrap:balance;">{{ t.whyH }}</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr)); gap:16px;">
+        <sc-for list="{{ reasons }}" as="r" hint-placeholder-count="4">
+          <div style="border-radius:2px; background:#F3F5F8; padding:30px 26px; display:flex; flex-direction:column; gap:14px;">
+            <div style="width:40px; height:40px; border-radius:50%; border:1.5px solid #B45309; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:#B45309;">{{ r.num }}</div>
+            <div style="font-weight:700; font-size:20px; line-height:1.25; color:#13243B;">{{ r.title }}</div>
+            <div style="font-size:15px; line-height:1.6; color:#4A5B70;">{{ r.body }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="coverage" data-screen-label="Coverage" style="background:#FFFFFF; padding:0 clamp(16px,4vw,40px) clamp(64px,9vw,112px);">
+    <div style="max-width:1240px; margin:0 auto; position:relative; overflow:hidden; border-radius:2px; background:#13243B; padding:clamp(32px,5vw,64px);">
+      <div style="position:absolute; inset:0; background-image:radial-gradient(rgba(255,255,255,0.10) 1px, transparent 1px); background-size:22px 22px; pointer-events:none;"></div>
+      <div style="position:absolute; right:-160px; top:-160px; width:480px; height:480px; border-radius:50%; background:radial-gradient(circle, rgba(180,83,9,0.35), transparent 65%); pointer-events:none;"></div>
+      <div style="position:relative; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:clamp(32px,5vw,64px);">
+        <div>
+          <div style="font-size:13px; font-weight:700; letter-spacing:0.14em; color:#E9A15B;">{{ t.covEyebrow }}</div>
+          <h2 style="margin:16px 0 0; font-weight:800; font-size:clamp(30px,3.6vw,46px); line-height:1.08; letter-spacing:-0.03em; color:#FFFFFF; text-wrap:balance;">{{ t.covH }}</h2>
+          <p style="margin:20px 0 0; font-size:17px; line-height:1.6; color:rgba(255,255,255,0.74); max-width:44ch;">{{ t.covP }}</p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin-top:32px;">
+            <sc-for list="{{ hubs }}" as="h" hint-placeholder-count="2">
+              <div style="border-radius:2px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.14); padding:20px;">
+                <div style="font-size:12px; font-weight:700; letter-spacing:0.12em; color:#E9A15B;">{{ h.tag }}</div>
+                <div style="font-weight:700; font-size:20px; color:#FFFFFF; margin-top:8px;">{{ h.city }}</div>
+                <div style="font-size:14px; color:rgba(255,255,255,0.7); margin-top:6px; line-height:1.45;">{{ h.role }}</div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; justify-content:center;">
+          <sc-for list="{{ markets }}" as="m" hint-placeholder-count="5">
+            <div style="display:flex; align-items:center; gap:16px; padding:18px 0; border-bottom:1px solid rgba(255,255,255,0.14);">
+              <div style="width:12px; height:12px; border-radius:50%; background:#E9A15B; box-shadow:0 0 0 6px rgba(233,161,91,0.18); flex:0 0 auto;"></div>
+              <div style="flex:1; font-weight:700; font-size:clamp(20px,2.2vw,26px); color:#FFFFFF; letter-spacing:-0.01em;">{{ m.name }}</div>
+              <div style="font-size:13px; font-weight:600; color:rgba(255,255,255,0.8); padding:6px 12px; border-radius:2px; border:1px solid rgba(255,255,255,0.22); white-space:nowrap;">{{ m.status }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" data-screen-label="Process" style="background:#F3F5F8; padding:clamp(64px,9vw,112px) clamp(16px,4vw,40px);">
+    <div style="max-width:1240px; margin:0 auto;">
+      <div style="text-align:center; max-width:680px; margin:0 auto 48px;">
+        <div style="font-size:13px; font-weight:700; letter-spacing:0.14em; color:#B45309;">{{ t.procEyebrow }}</div>
+        <h2 style="margin:16px 0 0; font-weight:800; font-size:clamp(30px,3.6vw,46px); line-height:1.08; letter-spacing:-0.03em; color:#13243B; text-wrap:balance;">{{ t.procH }}</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr)); gap:16px;">
+        <sc-for list="{{ steps }}" as="s" hint-placeholder-count="4">
+          <div style="background:#FFFFFF; border-radius:2px; padding:28px 24px; border:1px solid #E1E6EC; display:flex; flex-direction:column; gap:12px;">
+            <div style="font-weight:800; font-size:40px; letter-spacing:-0.03em; color:#DCE2E9;">{{ s.num }}</div>
+            <div style="font-weight:700; font-size:19px; color:#13243B;">{{ s.title }}</div>
+            <div style="font-size:15px; line-height:1.55; color:#4A5B70;">{{ s.body }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div id="logistics" style="margin-top:16px; border-radius:2px; background:#1E3A5F; padding:clamp(24px,4vw,40px); display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr)); gap:24px;">
+        <sc-for list="{{ terms }}" as="x" hint-placeholder-count="3">
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div style="font-size:12px; font-weight:700; letter-spacing:0.12em; color:#E9A15B;">{{ x.k }}</div>
+            <div style="font-weight:800; font-size:clamp(24px,2.4vw,30px); letter-spacing:-0.02em; color:#FFFFFF;">{{ x.v }}</div>
+            <div style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.74);">{{ x.d }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Documentation" style="background:#FFFFFF; padding:clamp(64px,9vw,112px) clamp(16px,4vw,40px);">
+    <div style="max-width:1240px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:clamp(32px,5vw,72px); align-items:start;">
+      <div>
+        <div style="font-size:13px; font-weight:700; letter-spacing:0.14em; color:#B45309;">{{ t.docEyebrow }}</div>
+        <h2 style="margin:16px 0 0; font-weight:800; font-size:clamp(30px,3.6vw,46px); line-height:1.08; letter-spacing:-0.03em; color:#13243B; text-wrap:balance;">{{ t.docH }}</h2>
+        <p style="margin:20px 0 0; font-size:17px; line-height:1.6; color:#4A5B70; max-width:42ch;">{{ t.docP }}</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr)); gap:12px;">
+        <sc-for list="{{ docs }}" as="d" hint-placeholder-count="4">
+          <div style="display:flex; gap:14px; align-items:flex-start; padding:20px; border-radius:2px; border:1px solid #E1E6EC;">
+            <div style="flex:0 0 auto; width:28px; height:28px; border-radius:50%; background:#1E3A5F; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700;">✓</div>
+            <div>
+              <div style="font-weight:700; font-size:16px; color:#13243B;">{{ d.t }}</div>
+              <div style="font-size:14px; color:#4A5B70; margin-top:4px; line-height:1.45;">{{ d.d }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="inquiry" data-screen-label="Inquiry" style="background:#F3F5F8; padding:clamp(64px,9vw,112px) clamp(16px,4vw,40px);">
+    <div style="max-width:1240px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr)); gap:clamp(32px,5vw,64px); align-items:start;">
+      <div>
+        <div style="font-size:13px; font-weight:700; letter-spacing:0.14em; color:#B45309;">{{ t.formEyebrow }}</div>
+        <h2 style="margin:16px 0 0; font-weight:800; font-size:clamp(30px,3.6vw,46px); line-height:1.08; letter-spacing:-0.03em; color:#13243B; text-wrap:balance;">{{ t.formH }}</h2>
+        <p style="margin:20px 0 0; font-size:17px; line-height:1.6; color:#4A5B70; max-width:44ch;">{{ t.formP }}</p>
+        <div style="display:flex; flex-direction:column; gap:12px; margin-top:32px;">
+          <a href="mailto:sales@ecohaven.co" style="display:flex; justify-content:space-between; align-items:center; gap:12px; padding:18px 22px; border-radius:2px; background:#FFFFFF; border:1px solid #E1E6EC; color:#13243B;" style-hover="border-color:#1E3A5F; color:#13243B;">
+            <span style="font-size:14px; color:#4A5B70;">Email</span><span style="font-weight:700;">sales@ecohaven.co</span>
+          </a>
+          <a href="https://wa.me/17868152153" style="display:flex; justify-content:space-between; align-items:center; gap:12px; padding:18px 22px; border-radius:2px; background:#FFFFFF; border:1px solid #E1E6EC; color:#13243B;" style-hover="border-color:#1E3A5F; color:#13243B;">
+            <span style="font-size:14px; color:#4A5B70;">WhatsApp</span><span style="font-weight:700;">+1 (786) 815-2153</span>
+          </a>
+        </div>
+      </div>
+      <div style="background:#13243B; border-radius:2px; padding:clamp(24px,4vw,44px);">
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:24px 0; display:flex; flex-direction:column; gap:12px;">
+            <div style="width:48px; height:48px; border-radius:50%; background:#B45309; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-size:22px; font-weight:700;">✓</div>
+            <div style="font-weight:700; font-size:24px; color:#FFFFFF; margin-top:8px;">{{ t.okH }}</div>
+            <div style="font-size:16px; color:rgba(255,255,255,0.74); line-height:1.6;">{{ t.okP }}</div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <form name="mayoreo" method="POST" data-netlify="true" onSubmit="{{ onSubmit }}" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr)); gap:16px;">
+            <div style="grid-column:1/-1; font-weight:700; font-size:24px; color:#FFFFFF; margin-bottom:4px;">{{ t.formCard }}</div>
+            <label style="display:flex; flex-direction:column; gap:8px; font-size:13px; font-weight:600; color:rgba(255,255,255,0.8);">{{ t.fName }}
+              <input name="name" required="" type="text" style="font-family:inherit; font-size:15px; padding:13px 16px; border-radius:2px; border:1px solid rgba(255,255,255,0.18); background:rgba(255,255,255,0.06); color:#FFFFFF;" style-focus="outline:none; border-color:#E9A15B;" />
+            </label>
+            <label style="display:flex; flex-direction:column; gap:8px; font-size:13px; font-weight:600; color:rgba(255,255,255,0.8);">{{ t.fCompany }}
+              <input name="company" required="" type="text" style="font-family:inherit; font-size:15px; padding:13px 16px; border-radius:2px; border:1px solid rgba(255,255,255,0.18); background:rgba(255,255,255,0.06); color:#FFFFFF;" style-focus="outline:none; border-color:#E9A15B;" />
+            </label>
+            <label style="display:flex; flex-direction:column; gap:8px; font-size:13px; font-weight:600; color:rgba(255,255,255,0.8);">{{ t.fEmail }}
+              <input name="email" required="" type="email" style="font-family:inherit; font-size:15px; padding:13px 16px; border-radius:2px; border:1px solid rgba(255,255,255,0.18); background:rgba(255,255,255,0.06); color:#FFFFFF;" style-focus="outline:none; border-color:#E9A15B;" />
+            </label>
+            <label style="display:flex; flex-direction:column; gap:8px; font-size:13px; font-weight:600; color:rgba(255,255,255,0.8);">{{ t.fPhone }}
+              <input name="phone" type="tel" style="font-family:inherit; font-size:15px; padding:13px 16px; border-radius:2px; border:1px solid rgba(255,255,255,0.18); background:rgba(255,255,255,0.06); color:#FFFFFF;" style-focus="outline:none; border-color:#E9A15B;" />
+            </label>
+            <label style="display:flex; flex-direction:column; gap:8px; font-size:13px; font-weight:600; color:rgba(255,255,255,0.8);">{{ t.fCat }}
+              <select name="category" style="font-family:inherit; font-size:15px; padding:13px 16px; border-radius:2px; border:1px solid rgba(255,255,255,0.18); background:#1B3150; color:#FFFFFF;" style-focus="outline:none; border-color:#E9A15B;">
+                <sc-for list="{{ categories }}" as="c" hint-placeholder-count="6"><option>{{ c.label }}</option></sc-for>
+              </select>
+            </label>
+            <label style="display:flex; flex-direction:column; gap:8px; font-size:13px; font-weight:600; color:rgba(255,255,255,0.8);">{{ t.fVol }}
+              <input name="volume" type="text" placeholder="$5,000+" style="font-family:inherit; font-size:15px; padding:13px 16px; border-radius:2px; border:1px solid rgba(255,255,255,0.18); background:rgba(255,255,255,0.06); color:#FFFFFF;" style-focus="outline:none; border-color:#E9A15B;" />
+            </label>
+            <label style="grid-column:1/-1; display:flex; flex-direction:column; gap:8px; font-size:13px; font-weight:600; color:rgba(255,255,255,0.8);">{{ t.fMsg }}
+              <textarea name="message" rows="4" style="font-family:inherit; font-size:15px; padding:13px 16px; border-radius:2px; border:1px solid rgba(255,255,255,0.18); background:rgba(255,255,255,0.06); color:#FFFFFF; resize:vertical;" style-focus="outline:none; border-color:#E9A15B;"></textarea>
+            </label>
+            <button type="submit" style="grid-column:1/-1; justify-self:start; padding:16px 32px; border-radius:2px; border:none; background:#B45309; color:#FFFFFF; font-family:inherit; font-size:16px; font-weight:600; cursor:pointer;" style-hover="background:#C9620F;">{{ t.submit }}</button>
+          </form>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#13243B; padding:clamp(56px,7vw,84px) clamp(16px,4vw,40px) 0;">
+    <div style="max-width:1240px; margin:0 auto;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr)); gap:40px; padding-bottom:48px;">
+        <div>
+          <div>
+            <img src="assets/ecohaven-logo-white.png" alt="ECOHAVEN GROUP LLC" style="height:44px; width:auto; display:block;" />
+          </div>
+          <p style="margin:16px 0 0; font-size:14px; line-height:1.6; color:rgba(255,255,255,0.64); max-width:30ch;">{{ t.footTag }}</p>
+        </div>
+        <div>
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; color:#E9A15B;">MIAMI · USA</div>
+          <div style="margin-top:14px; font-size:15px; line-height:1.7; color:rgba(255,255,255,0.8);">2 S Biscayne Blvd<br />Suite 3200 #5114<br />Miami, FL 33131</div>
+        </div>
+        <div>
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; color:#E9A15B;">PANAMÁ</div>
+          <div style="margin-top:14px; font-size:15px; line-height:1.7; color:rgba(255,255,255,0.8);">Brisas del Golf, Plaza Brisas 507<br />PB, Local 14<br />Tel. +507 387-9102</div>
+        </div>
+        <div>
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; color:#E9A15B;">{{ t.contact }}</div>
+          <div style="margin-top:14px; display:flex; flex-direction:column; gap:8px; font-size:15px;">
+            <a href="mailto:sales@ecohaven.co" style="color:rgba(255,255,255,0.8);" style-hover="color:#FFFFFF;">sales@ecohaven.co</a>
+            <a href="https://wa.me/17868152153" style="color:rgba(255,255,255,0.8);" style-hover="color:#FFFFFF;">WhatsApp +1 (786) 815-2153</a>
+            <a href="https://ecohaven.co" style="color:rgba(255,255,255,0.8);" style-hover="color:#FFFFFF;">ecohaven.co</a>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,0.14); padding:24px 0 32px; display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; font-size:13px; color:rgba(255,255,255,0.56);">
+        <div>{{ t.copy }}</div>
+        <div>ecohaven.co</div>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;defaultLang&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;en&quot;,&quot;es&quot;],&quot;default&quot;:&quot;en&quot;,&quot;tsType&quot;:&quot;'en'|'es'&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+class Component extends DCLogic {
+  state = { lang: null, submitted: false };
+  componentDidMount() {
+    const saved = localStorage.getItem('ehLang');
+    if (saved) this.setState({ lang: saved });
+  }
+  setLang(l) { localStorage.setItem('ehLang', l); this.setState({ lang: l }); }
+  renderVals() {
+    const lang = this.state.lang || this.props.defaultLang || 'en';
+    const C = COPY[lang];
+    const on = (a) => ({ bg: a ? '#1E3A5F' : 'transparent', fg: a ? '#FFFFFF' : '#4A5B70' });
+    const shapes = [['50%','0deg'],['3px','0deg'],['0','45deg'],['50% 0 50% 0','0deg'],['3px','20deg'],['50% 50% 0 0','0deg']];
+    return {
+      t: C.t,
+      stats: C.stats,
+      categories: C.cats.map((c, i) => ({ label: c[0], note: c[1], num: '0' + (i + 1), radius: shapes[i][0], rotate: shapes[i][1] })),
+      reasons: C.reasons.map((r, i) => ({ num: '0' + (i + 1), title: r[0], body: r[1] })),
+      hubs: C.hubs, markets: C.markets,
+      steps: C.steps.map((s, i) => ({ num: '0' + (i + 1), title: s[0], body: s[1] })),
+      terms: C.terms, docs: C.docs,
+      enBg: on(lang === 'en').bg, enFg: on(lang === 'en').fg,
+      esBg: on(lang === 'es').bg, esFg: on(lang === 'es').fg,
+      setEn: () => this.setLang('en'), setEs: () => this.setLang('es'),
+      submitted: this.state.submitted, notSubmitted: !this.state.submitted,
+      onSubmit: (e) => { e.preventDefault(); const fd = new FormData(e.target); fd.append('form-name', 'mayoreo'); fd.append('pagina', location.pathname); fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(fd).toString() }).then((r) => { if (!r.ok) throw new Error(r.status); this.setState({ submitted: true }); }).catch(() => { alert('No se pudo enviar / Could not send. sales@ecohaven.co'); }); }
+    };
+  }
+}
+const COPY = {
+  en: {
+    t: {
+      topbar: 'Wholesale distribution · United States & Latin America',
+      nav1: 'Categories', nav2: 'Coverage', nav3: 'How We Work', cta: 'Request Wholesale Account', cta2: 'View Categories',
+      eyebrow: 'ECOHAVEN GROUP LLC · Wholesale Distributor',
+      h1: 'Wholesale distribution of consumer brands across the U.S. & Latin America',
+      sub: 'We supply retailers, distributors and online sellers with 1,500+ SKUs from our headquarters in Miami and Panama — backed by an operating retail group since 2016.',
+      hubsLabel: 'HEADQUARTERS',
+      aboutEyebrow: 'ABOUT US', aboutH: 'An established wholesaler with real retail roots.',
+      aboutP1: 'ECOHAVEN GROUP LLC is a wholesale distribution company serving business buyers in the United States and Latin America. We source consumer products from authorized U.S. distributors and brands and resell them in volume to retailers, distributors and e-commerce operators.',
+      aboutP2: 'Our group has operated in Panama since 2016 with three physical retail stores and online sales — so we understand sell-through, assortment and what moves on the shelf.',
+      groupLine: 'operating since 2016 in Panama with 3 retail stores and online sales.',
+      catEyebrow: 'PRODUCT CATEGORIES', catH: 'What we supply', catP: 'A curated multi-category portfolio of consumer goods, available in wholesale volumes for retail and distribution.',
+      whyEyebrow: 'WHY BUY FROM US', whyH: 'A wholesale partner built for long-term supply',
+      covEyebrow: 'COVERAGE', covH: 'Two headquarters. One regional network.', covP: 'Miami connects us to U.S. supply; Panama connects us to Central and South America. Together they let us serve buyers across the region with consistent supply.',
+      procEyebrow: 'HOW WE WORK', procH: 'A simple, documented wholesale process',
+      docEyebrow: 'COMPLIANCE', docH: 'Fully documented and ready to onboard', docP: 'We work through formal channels. Documentation is available to vendors and buyers upon request.',
+      formEyebrow: 'WHOLESALE INQUIRY', formH: 'Open a wholesale account', formP: 'Tell us what you need. Our sales team responds with pricing, availability and terms within two business days.',
+      formCard: 'Request pricing', fName: 'Full Name', fCompany: 'Company Name', fEmail: 'Email', fPhone: 'Phone', fCat: 'Category of Interest', fVol: 'Estimated Monthly Volume', fMsg: 'Message', submit: 'Submit Inquiry',
+      okH: 'Inquiry received', okP: 'Thank you. Our sales team will reply within two business days.',
+      footTag: 'Wholesale distribution of consumer brands across the U.S. and Latin America.', contact: 'CONTACT',
+      copy: '© 2026 ECOHAVEN GROUP LLC. All rights reserved. Part of BYGGA Retail Group.'
+    },
+    stats: [{ v: '1,500+', l: 'Active SKUs' }, { v: '3', l: 'Retail stores in Panama' }, { v: '2016', l: 'Operating since' }, { v: '2', l: 'HQs: Miami & Panama' }],
+    cats: [['Health & Beauty','Skincare, cosmetics, vitamins and wellness.'],['Personal Care','Hygiene, grooming and daily-use essentials.'],['Grocery & Gourmet','Shelf-stable foods, snacks and specialty goods.'],['Pet Supplies','Pet food, care and accessories.'],['Home & Kitchen','Housewares, cleaning and small kitchen goods.'],['Office Products','Stationery, supplies and consumables.']],
+    reasons: [['Established Retail Group','Backed by a retail group operating stores and online sales in Panama since 2016.'],['U.S. LLC with Full Documentation','Registered U.S. company with EIN, resale certificate and U.S. banking.'],['Long-Term Wholesale Relationships','Recurring supply programs and consistent replenishment, not one-off deals.'],['Multi-Channel Distribution','Product moves through retail, wholesale and online channels across the region.']],
+    hubs: [{ tag: 'HQ · USA', city: 'Miami, Florida', role: 'U.S. sourcing, sales and export logistics.' }, { tag: 'HQ · LATAM', city: 'Panama City', role: 'Retail operations and regional distribution.' }],
+    markets: [{ name: 'United States', status: 'Active' }, { name: 'Panama', status: 'Active' }, { name: 'Costa Rica', status: 'Active' }, { name: 'Colombia', status: 'Active' }, { name: 'Central America', status: 'Expanding' }],
+    steps: [['Submit an inquiry','Share your company details, categories and expected volume.'],['Account approval','We verify your business and open your wholesale account.'],['Quote & purchase order','Receive pricing and availability; confirm your PO from $5,000.'],['Pickup or dispatch','Orders ship EXW Miami or are consolidated for LATAM delivery.']],
+    terms: [{ k: 'MINIMUM ORDER', v: '$5,000 MOQ', d: 'Per purchase order, mixed categories allowed.' }, { k: 'INCOTERM', v: 'EXW Miami', d: 'Pickup from our Miami facility by your forwarder.' }, { k: 'LATAM LOGISTICS', v: 'Miami → Panama', d: 'Consolidation and regional dispatch available on request.' }],
+    docs: [{ t: 'U.S. LLC (Florida)', d: 'ECOHAVEN GROUP LLC, registered and in good standing.' }, { t: 'Federal EIN', d: 'IRS Employer Identification Number.' }, { t: 'Florida Resale Certificate', d: 'Valid annual resale certificate.' }, { t: 'Panama Commercial Registration', d: 'Licensed retail and commercial operations.' }]
+  },
+  es: {
+    t: {
+      topbar: 'Distribución mayorista · Estados Unidos y Latinoamérica',
+      nav1: 'Categorías', nav2: 'Cobertura', nav3: 'Cómo Trabajamos', cta: 'Solicitar Cuenta Mayorista', cta2: 'Ver Categorías',
+      eyebrow: 'ECOHAVEN GROUP LLC · Distribuidor Mayorista',
+      h1: 'Distribución mayorista de marcas de consumo en EE.UU. y Latinoamérica',
+      sub: 'Abastecemos a minoristas, distribuidores y vendedores en línea con más de 1,500 SKUs desde nuestras sedes en Miami y Panamá — respaldados por un grupo minorista operando desde 2016.',
+      hubsLabel: 'SEDES',
+      aboutEyebrow: 'QUIÉNES SOMOS', aboutH: 'Un mayorista establecido con raíces en el retail.',
+      aboutP1: 'ECOHAVEN GROUP LLC es una empresa de distribución mayorista que atiende a compradores empresariales en Estados Unidos y Latinoamérica. Adquirimos productos de consumo de distribuidores y marcas autorizadas en EE.UU. y los comercializamos por volumen a minoristas, distribuidores y operadores de e-commerce.',
+      aboutP2: 'Nuestro grupo opera en Panamá desde 2016 con tres tiendas físicas y venta en línea — conocemos la rotación, el surtido y lo que se vende en el punto de venta.',
+      groupLine: 'operando desde 2016 en Panamá con 3 tiendas físicas y venta en línea.',
+      catEyebrow: 'CATEGORÍAS', catH: 'Lo que distribuimos', catP: 'Un portafolio multicategoría de productos de consumo, disponible en volúmenes mayoristas para retail y distribución.',
+      whyEyebrow: 'POR QUÉ COMPRARNOS', whyH: 'Un socio mayorista para el abastecimiento a largo plazo',
+      covEyebrow: 'COBERTURA', covH: 'Dos sedes. Una red regional.', covP: 'Miami nos conecta con el abastecimiento en EE.UU.; Panamá nos conecta con Centro y Sudamérica. Juntas nos permiten atender compradores en toda la región con suministro constante.',
+      procEyebrow: 'CÓMO TRABAJAMOS', procH: 'Un proceso mayorista simple y documentado',
+      docEyebrow: 'CUMPLIMIENTO', docH: 'Totalmente documentados y listos para operar', docP: 'Trabajamos por canales formales. La documentación está disponible para proveedores y compradores bajo solicitud.',
+      formEyebrow: 'SOLICITUD MAYORISTA', formH: 'Abra su cuenta mayorista', formP: 'Cuéntenos qué necesita. Nuestro equipo de ventas responde con precios, disponibilidad y condiciones en dos días hábiles.',
+      formCard: 'Solicitar cotización', fName: 'Nombre completo', fCompany: 'Empresa', fEmail: 'Correo electrónico', fPhone: 'Teléfono', fCat: 'Categoría de interés', fVol: 'Volumen mensual estimado', fMsg: 'Mensaje', submit: 'Enviar Solicitud',
+      okH: 'Solicitud recibida', okP: 'Gracias. Nuestro equipo de ventas le responderá en dos días hábiles.',
+      footTag: 'Distribución mayorista de marcas de consumo en EE.UU. y Latinoamérica.', contact: 'CONTACTO',
+      copy: '© 2026 ECOHAVEN GROUP LLC. Todos los derechos reservados. Parte de BYGGA Retail Group.'
+    },
+    stats: [{ v: '1,500+', l: 'SKUs activos' }, { v: '3', l: 'Tiendas físicas en Panamá' }, { v: '2016', l: 'Operando desde' }, { v: '2', l: 'Sedes: Miami y Panamá' }],
+    cats: [['Salud y Belleza','Cuidado de la piel, cosméticos, vitaminas y bienestar.'],['Cuidado Personal','Higiene, aseo y artículos de uso diario.'],['Alimentos y Gourmet','Alimentos no perecederos, snacks y especialidades.'],['Mascotas','Alimento, cuidado y accesorios para mascotas.'],['Hogar y Cocina','Artículos del hogar, limpieza y cocina.'],['Productos de Oficina','Papelería, suministros y consumibles.']],
+    reasons: [['Grupo Minorista Establecido','Respaldados por un grupo con tiendas y venta en línea en Panamá desde 2016.'],['LLC en EE.UU. con Documentación Completa','Empresa registrada en EE.UU. con EIN, certificado de reventa y banca local.'],['Relaciones Mayoristas a Largo Plazo','Programas de suministro recurrente y reposición constante, no ventas puntuales.'],['Distribución Multicanal','Producto que se mueve por retail, mayoreo y canales en línea en toda la región.']],
+    hubs: [{ tag: 'SEDE · EE.UU.', city: 'Miami, Florida', role: 'Abastecimiento, ventas y logística de exportación.' }, { tag: 'SEDE · LATAM', city: 'Ciudad de Panamá', role: 'Operación retail y distribución regional.' }],
+    markets: [{ name: 'Estados Unidos', status: 'Activo' }, { name: 'Panamá', status: 'Activo' }, { name: 'Costa Rica', status: 'Activo' }, { name: 'Colombia', status: 'Activo' }, { name: 'Centroamérica', status: 'En expansión' }],
+    steps: [['Envíe su solicitud','Comparta datos de su empresa, categorías y volumen estimado.'],['Aprobación de cuenta','Verificamos su empresa y abrimos su cuenta mayorista.'],['Cotización y orden','Reciba precios y disponibilidad; confirme su orden desde $5,000.'],['Retiro o despacho','Órdenes EXW Miami o consolidadas para entrega en LATAM.']],
+    terms: [{ k: 'PEDIDO MÍNIMO', v: 'MOQ $5,000', d: 'Por orden de compra, se permiten categorías mixtas.' }, { k: 'INCOTERM', v: 'EXW Miami', d: 'Retiro en nuestra instalación de Miami por su agente de carga.' }, { k: 'LOGÍSTICA LATAM', v: 'Miami → Panamá', d: 'Consolidación y despacho regional disponible bajo solicitud.' }],
+    docs: [{ t: 'LLC en EE.UU. (Florida)', d: 'ECOHAVEN GROUP LLC, registrada y en regla.' }, { t: 'EIN Federal', d: 'Número de Identificación del Empleador (IRS).' }, { t: 'Certificado de Reventa de Florida', d: 'Certificado de reventa anual vigente.' }, { t: 'Registro Comercial en Panamá', d: 'Operación comercial y retail con licencia.' }]
+  }
+};
+</script>
+</body>
+</html>
