@@ -2,8 +2,8 @@
 
 Sitio estático (HTML + JavaScript), listo para publicar en Netlify sin paso de compilación.
 
-- `index.html`: página principal (diseño "Group A", bilingüe EN/ES).
-- `opcion-b.html` y `opcion-original.html`: los otros dos diseños, para comparar. No aparecen en Google.
+- `index.html`: página principal (diseño estilo Launchfolio, bilingüe EN/ES, HTML y CSS sin dependencias).
+- `opcion-b.html` y `opcion-original.html`: diseños anteriores, para comparar. No aparecen en Google.
 - `assets/`: logos.
 - El formulario de cuentas mayoristas usa Netlify Forms (formulario `mayoreo`). Las solicitudes llegan al panel de Netlify, en Forms, y se pueden reenviar por correo a sales@ecohaven.co.
 
