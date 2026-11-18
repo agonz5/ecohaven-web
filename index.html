@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>EcoHaven Group LLC</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Wholesale distribution of consumer brands across the U.S. and Latin America. Miami and Panama.">
+<meta name="description" content="Omnichannel retailer of consumer brands: 3 retail stores in Panama, our own online store and Amazon. Offices in Miami, Panama and Bogotá.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -15,17 +15,17 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="EcoHaven Group LLC">
 <meta property="og:url" content="https://ecohaven.co/">
-<meta property="og:title" content="EcoHaven Group LLC · Wholesale Distributor">
-<meta property="og:description" content="Wholesale distribution of consumer brands across the U.S. and Latin America. 1,500+ SKUs from Miami and Panama.">
+<meta property="og:title" content="EcoHaven Group LLC · Omnichannel Retailer">
+<meta property="og:description" content="Omnichannel retailer of consumer brands: 3 retail stores in Panama, our own online store and Amazon. Miami, Panama and Bogotá.">
 <meta property="og:image" content="https://ecohaven.co/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="EcoHaven: wholesale distribution of consumer brands, Miami and Panama">
+<meta property="og:image:alt" content="EcoHaven: omnichannel retailer of consumer brands, Miami, Panama and Bogotá">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="EcoHaven Group LLC · Wholesale Distributor">
-<meta name="twitter:description" content="Wholesale distribution of consumer brands across the U.S. and Latin America. 1,500+ SKUs from Miami and Panama.">
+<meta name="twitter:title" content="EcoHaven Group LLC · Omnichannel Retailer">
+<meta name="twitter:description" content="Omnichannel retailer of consumer brands: 3 retail stores in Panama, our own online store and Amazon. Miami, Panama and Bogotá.">
 <meta name="twitter:image" content="https://ecohaven.co/assets/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -153,6 +153,8 @@ strong { color: var(--ink); font-weight: 600; }
 .cat-art .sku { position: absolute; left: 12px; top: 10px; font: 600 11px var(--body); letter-spacing: 0.1em; color: var(--muted); }
 .cat-art svg { width: 64px; height: 64px; stroke: var(--accent); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .cat p { font-size: 14px; color: var(--muted); }
+.cat.feat { grid-column: 1 / -1; }
+@media (min-width: 521px) { .cat.feat { grid-template-columns: minmax(0,1fr) minmax(0,1fr); column-gap: 24px; align-items: center; } .cat.feat .cat-art { grid-row: span 3; } }
 .cat .tag { justify-self: start; font-size: 12px; font-weight: 600; background: var(--panel); border-radius: 999px; padding: 4px 10px; color: var(--muted); }
 
 /* Statement */
@@ -257,6 +259,9 @@ footer.panel { gap: 20px; }
 .foot-row nav { display: flex; flex-wrap: wrap; gap: 16px; }
 .foot-row a { text-decoration: none; }
 .foot-row a:hover { color: var(--ink); }
+.foot-addr { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; color: var(--muted); font-style: normal; }
+.foot-addr b { color: var(--ink); font-weight: 600; }
+.foot-addr a { text-decoration: none; color: var(--ink); }
 .wordmark { font: 700 clamp(56px, 16vw, 200px)/0.85 var(--display); letter-spacing: -0.06em; color: var(--ink); overflow: hidden; white-space: nowrap; }
 .wordmark span { color: var(--accent); }
 </style>
@@ -289,25 +294,26 @@ footer.panel { gap: 20px; }
 
   <section class="panel hero">
     <div class="hero-text">
-      <span class="badge"><i></i><span data-i="badge">Opening new wholesale accounts</span></span>
-      <h1 data-i="h1">Consumer brands, supplied at wholesale volume.</h1>
-      <p class="lead"><strong data-i="leadB">U.S. and Latin America distribution from Miami and Panama.</strong><span data-i="lead">We supply retailers, distributors and online sellers with 1,500+ SKUs, backed by a retail group operating since 2016.</span></p>
+      <span class="badge"><i></i><span data-i="badge">Buying in volume from authorized brands</span></span>
+      <h1 data-i="h1">Consumer brands, in our stores and online.</h1>
+      <p class="lead"><strong data-i="leadB">An omnichannel retailer operating from Miami, Panama and Bogotá.</strong><span data-i="lead"> We sell 1,500+ SKUs directly to consumers through 3 retail stores in Panama (BYGGA Retail Group), our own online store and Amazon.</span></p>
       <div class="ctas">
-        <a class="btn btn-accent" href="#contact" data-i="cta">Request wholesale account</a>
+        <a class="btn btn-accent" href="#contact" data-i="cta">Supplier inquiries</a>
         <a class="btn btn-ghost" href="#categories" data-i="cta2">View categories</a>
       </div>
       <div class="proof">
         <div class="flags" aria-hidden="true"><span>US</span><span>PA</span><span>CR</span><span>CO</span></div>
-        <span data-i="proof">Serving 4 active markets</span>
+        <span data-i="proof">Selling in 4 active markets</span>
       </div>
     </div>
-    <div class="route" aria-label="Supply route">
+    <div class="route" aria-label="Our locations">
       <img src="assets/ecohaven-logo-white.png" alt="EcoHaven">
       <div class="legs">
-        <div class="leg"><div class="dot"></div><div><small data-i="leg1t">HQ · USA</small><b>Miami, Florida</b><p data-i="leg1">U.S. sourcing, sales and export logistics.</p></div></div>
-        <div class="leg"><div class="dot"></div><div><small data-i="leg2t">HQ · LATAM</small><b data-i="leg2c">Panama City</b><p data-i="leg2">Retail operations and regional distribution.</p></div></div>
+        <div class="leg"><div class="dot"></div><div><small data-i="leg1t">HQ · USA</small><b>Miami, Florida</b><p data-i="leg1">Purchasing, e-commerce and Amazon operations.</p></div></div>
+        <div class="leg"><div class="dot"></div><div><small data-i="leg2t">HQ · LATAM</small><b data-i="leg2c">Panama City</b><p data-i="leg2">Three retail stores through BYGGA Retail Group.</p></div></div>
+        <div class="leg"><div class="dot"></div><div><small data-i="leg3t">HQ · Colombia</small><b>Bogotá, Colombia</b><p data-i="leg3">Business Structuring &amp; Development Office.</p></div></div>
       </div>
-      <div class="terms-row"><span>MOQ $5,000</span><span>EXW Miami</span><span data-i="chipCons">LATAM consolidation</span></div>
+      <div class="terms-row"><span data-i="chipPO">POs $5,000+</span><span data-i="chipRx">Miami receiving</span><span data-i="chipCons">Panama store replenishment</span></div>
     </div>
   </section>
 
@@ -315,20 +321,20 @@ footer.panel { gap: 20px; }
     <div class="stat"><b>1,500+</b><span data-i="s1">Active SKUs</span></div>
     <div class="stat"><b>2016</b><span data-i="s2">Operating since</span></div>
     <div class="stat"><b>3</b><span data-i="s3">Retail stores in Panama</span></div>
-    <div class="stat"><b>2</b><span data-i="s4">HQs: Miami &amp; Panama</span></div>
+    <div class="stat"><b>3</b><span data-i="s4">Offices: Miami, Panama &amp; Bogotá</span></div>
   </section>
 
   <section class="panel" id="categories">
     <div class="head">
       <span class="label" data-i="catL">Product categories</span>
-      <h2 data-i="catH">What we supply</h2>
-      <p class="lead" data-i="catP">A multi-category portfolio of consumer goods, available in wholesale volumes for retail and distribution.</p>
+      <h2 data-i="catH">What we sell</h2>
+      <p class="lead" data-i="catP">A multi-category consumer assortment, sold through our stores in Panama, our own online store and Amazon.</p>
     </div>
     <div class="cats" id="cats"></div>
   </section>
 
   <section class="panel">
-    <p class="statement" data-i="quote"><strong>We run our own stores.</strong> We know what sells through, what sits on the shelf, and what a buyer needs to reorder with confidence.</p>
+    <p class="statement" data-i="quote"><strong>We run our own stores.</strong> We know what sells through, what sits on the shelf, and we reorder with confidence.</p>
     <div class="who">
       <img src="assets/ecohaven-logo.jpeg" alt="">
       <div><b>EcoHaven Group LLC</b><span data-i="quoteBy">Part of BYGGA Retail Group</span></div>
@@ -337,12 +343,12 @@ footer.panel { gap: 20px; }
 
   <section class="panel" id="why">
     <div class="head">
-      <span class="label" data-i="whyL">Why buy from us</span>
-      <h2 data-i="whyH">A wholesale partner built for long-term supply</h2>
+      <span class="label" data-i="whyL">Why brands work with us</span>
+      <h2 data-i="whyH">A retail partner built for long-term purchasing</h2>
     </div>
     <div class="why" id="why-list"></div>
     <div class="head" style="gap:10px;">
-      <span class="label" data-i="mktL">Markets we serve</span>
+      <span class="label" data-i="mktL">Where we sell</span>
       <div class="chips" id="markets"></div>
     </div>
   </section>
@@ -356,41 +362,41 @@ footer.panel { gap: 20px; }
     </div>
     <div class="about-text">
       <span class="label" data-i="aboutL">About us</span>
-      <h2 style="color:var(--ink)" data-i="aboutH">An established wholesaler with real retail roots.</h2>
-      <p data-i="about1"><strong>ECOHAVEN GROUP LLC is a wholesale distribution company</strong> serving business buyers in the United States and Latin America.</p>
-      <p data-i="about2"><strong>We source from authorized U.S. distributors and brands</strong> and resell in volume to retailers, distributors and e-commerce operators.</p>
-      <p data-i="about3"><strong>Our group has operated in Panama since 2016</strong> with three physical stores and online sales, so we understand assortment and sell-through.</p>
+      <h2 style="color:var(--ink)" data-i="aboutH">An established omnichannel retailer.</h2>
+      <p data-i="about1"><strong>ECOHAVEN GROUP LLC is an omnichannel retailer</strong> selling consumer brands in the United States and Latin America.</p>
+      <p data-i="about2"><strong>We buy from authorized U.S. distributors and brands</strong> in volume, from $5,000 per purchase order, and sell directly to consumers through our stores, our own online store and Amazon.</p>
+      <p data-i="about3"><strong>Our group has operated in Panama since 2016</strong> with three physical stores through BYGGA Retail Group. We also maintain operations and offices in Bogotá, Colombia, home to our Business Structuring &amp; Development Office.</p>
     </div>
   </section>
 
   <section class="panel" id="process">
     <div class="head">
       <span class="label" data-i="procL">How we work</span>
-      <h2 data-i="procH">Simple process. Documented supply.</h2>
-      <p class="lead" data-i="procP">From first inquiry to dispatch in four steps.</p>
+      <h2 data-i="procH">Simple process. Documented purchasing.</h2>
+      <p class="lead" data-i="procP">How we open accounts with new suppliers, in four steps.</p>
     </div>
     <div class="steps" id="steps"></div>
   </section>
 
   <section class="panel" id="terms">
     <div class="head">
-      <span class="label" data-i="termsL">Wholesale terms</span>
+      <span class="label" data-i="termsL">Purchasing terms</span>
       <h2 data-i="termsH">Clear terms, from the first order.</h2>
     </div>
     <div class="plans">
       <div class="plan main">
-        <div class="top"><h3 data-i="p1t">Wholesale account</h3><span class="pill" data-i="p1b">Accounts open</span></div>
-        <div class="price">$5,000 <small data-i="p1u">minimum per order</small></div>
-        <p class="muted" data-i="p1d">For retailers, distributors and online sellers buying in volume.</p>
+        <div class="top"><h3 data-i="p1t">Volume purchasing</h3><span class="pill" data-i="p1b">Buying now</span></div>
+        <div class="price">$5,000+ <small data-i="p1u">per purchase order</small></div>
+        <p class="muted" data-i="p1d">For authorized distributors and brands supplying our stores and online channels.</p>
         <ul id="p1"></ul>
-        <a class="btn btn-solid" href="#contact" data-i="p1c">Request account</a>
+        <a class="btn btn-solid" href="#contact" data-i="p1c">Contact purchasing</a>
       </div>
       <div class="plan">
-        <div class="top"><h3 data-i="p2t">LATAM consolidation</h3><span class="pill">Miami → Panamá</span></div>
-        <div class="price" style="font-size:clamp(28px,4vw,36px)" data-i="p2p">On request</div>
-        <p class="muted" data-i="p2d">For buyers in Central and South America who need consolidated freight.</p>
+        <div class="top"><h3 data-i="p2t">Panama replenishment</h3><span class="pill">Miami → Panamá</span></div>
+        <div class="price" style="font-size:clamp(28px,4vw,36px)" data-i="p2p">In-house</div>
+        <p class="muted" data-i="p2d">Inventory for our Panama stores is consolidated in Miami and shipped to Panama by our own team.</p>
         <ul id="p2"></ul>
-        <a class="btn btn-ghost" href="#contact" data-i="p2c">Get a quote</a>
+        <a class="btn btn-ghost" href="#contact" data-i="p2c">Contact us</a>
       </div>
     </div>
   </section>
@@ -399,7 +405,7 @@ footer.panel { gap: 20px; }
     <div class="head">
       <span class="label" data-i="docL">Compliance</span>
       <h2 data-i="docH">Fully documented and ready to onboard</h2>
-      <p class="lead" data-i="docP">We work through formal channels. Documentation is available to vendors and buyers on request.</p>
+      <p class="lead" data-i="docP">We work through formal channels. Documentation is available to suppliers on request.</p>
     </div>
     <div class="docs" id="docs-list"></div>
   </section>
@@ -414,17 +420,19 @@ footer.panel { gap: 20px; }
 
   <section class="panel" id="contact">
     <div class="cta-card">
-      <h3 data-i="ctaH">Ready to stock your shelves? Open a wholesale account today.</h3>
+      <h3 data-i="ctaH">Supplying consumer brands? Let’s open an account.</h3>
       <a class="btn btn-solid" href="#inquiry-form" data-i="ctaB">Start inquiry</a>
     </div>
     <div class="contact">
       <div style="display:grid; gap:24px; min-width:0;">
-        <span class="label" data-i="formL">Wholesale inquiry</span>
-        <p class="big"><span data-i="big1">Let's</span> <span class="rot" id="rot">supply</span><br><span data-i="big2">your business.</span></p>
+        <span class="label" data-i="formL">Supplier inquiry</span>
+        <p class="big"><span data-i="big1">Let's</span> <span class="rot" id="rot">work</span><br><span data-i="big2">together.</span></p>
         <div class="reach">
-          <div><small data-i="emailL">Email</small><a href="mailto:sales@ecohaven.co">sales@ecohaven.co</a></div>
+          <div><small data-i="emailL">Corporate email</small><a href="mailto:sales@ecohaven.co">sales@ecohaven.co</a></div>
           <div><small>WhatsApp</small><a href="https://wa.me/17868152153">+1 (786) 815-2153</a></div>
-          <div><small data-i="hqL">Headquarters</small><span data-i="hqV">Miami, FL · Panama City</span></div>
+          <div><small data-i="hqL">U.S. headquarters</small><span>2 S Biscayne Blvd, Ste 3200, Miami, FL 33131</span></div>
+          <div><small data-i="paL">Panama</small><span data-i="paV">Panama City · 3 retail stores (BYGGA Retail Group)</span></div>
+          <div><small>Colombia</small><span data-i="coV">Bogotá · Business Structuring &amp; Development Office</span></div>
         </div>
       </div>
       <form id="inquiry-form" name="mayoreo" method="POST" data-netlify="true" netlify-honeypot="bot-field">
@@ -435,12 +443,12 @@ footer.panel { gap: 20px; }
         <label><span data-i="fCompany">Company name</span><input id="f-company" name="company" required autocomplete="organization"></label>
         <label><span data-i="fEmail">Email</span><input id="f-email" name="email" type="email" required autocomplete="email"></label>
         <label><span data-i="fPhone">Phone</span><input id="f-phone" name="phone" type="tel" autocomplete="tel"></label>
-        <label><span data-i="fCat">Category of interest</span><select id="f-cat" name="category"></select></label>
-        <label><span data-i="fVol">Estimated monthly volume</span><input id="f-vol" name="volume" placeholder="$5,000+"></label>
+        <label><span data-i="fCat">Category you supply</span><select id="f-cat" name="category"></select></label>
+        <label><span data-i="fVol">Brands you carry</span><input id="f-vol" name="brands"></label>
         <label class="full"><span data-i="fMsg">Message</span><textarea id="f-msg" name="message" rows="4"></textarea></label>
         <button class="btn btn-accent full" type="submit" style="justify-self:start" data-i="submit">Submit inquiry</button>
         <p class="err" id="f-err" hidden></p>
-        <div class="ok" id="f-ok" hidden><b data-i="okH">Inquiry received</b><span data-i="okP">Thank you. Our sales team will reply within two business days.</span></div>
+        <div class="ok" id="f-ok" hidden><b data-i="okH">Inquiry received</b><span data-i="okP">Thank you. Our purchasing team will reply within two business days.</span></div>
       </form>
     </div>
   </section>
@@ -455,6 +463,11 @@ footer.panel { gap: 20px; }
         <a href="#contact" data-i="contactBtn">Contact</a>
       </nav>
     </div>
+    <address class="foot-addr">
+      <span><b>ECOHAVEN GROUP LLC</b> · 2 S Biscayne Blvd, Ste 3200, Miami, FL 33131</span>
+      <a href="mailto:sales@ecohaven.co">sales@ecohaven.co</a>
+      <span data-i="footOff">Panama City, Panama · Bogotá, Colombia</span>
+    </address>
     <div class="wordmark" aria-hidden="true">ecohaven<span>.</span></div>
   </footer>
 </main>
@@ -466,92 +479,99 @@ const ICONS = [
   '<path d="M14 26h36l-4 24H18z"/><path d="M22 26l6-12M42 26l-6-12"/><path d="M24 36h16"/>',
   '<circle cx="22" cy="22" r="4"/><circle cx="34" cy="16" r="4"/><circle cx="46" cy="22" r="4"/><circle cx="16" cy="34" r="4"/><path d="M32 30c-8 0-14 12-10 16s8-2 10-2 6 6 10 2-2-16-10-16z"/>',
   '<path d="M12 30L32 14l20 16"/><path d="M18 26v24h28V26"/><path d="M28 50V38h8v12"/>',
-  '<rect x="18" y="12" width="28" height="40" rx="3"/><path d="M24 22h16M24 30h16M24 38h10"/>'
+  '<rect x="18" y="12" width="28" height="40" rx="3"/><path d="M24 22h16M24 30h16M24 38h10"/>',
+  '<rect x="12" y="28" width="40" height="22" rx="3"/><rect x="17" y="21" width="10" height="7" rx="2"/><rect x="37" y="21" width="10" height="7" rx="2"/><path d="M22 39h20"/>'
 ];
 const T = {
   en: {
     nav1: 'Categories', nav2: 'Why us', nav3: 'Terms', nav4: 'FAQ', contactBtn: 'Contact',
-    badge: 'Opening new wholesale accounts',
-    h1: 'Consumer brands, supplied at wholesale volume.',
-    leadB: 'U.S. and Latin America distribution from Miami and Panama.',
-    lead: 'We supply retailers, distributors and online sellers with 1,500+ SKUs, backed by a retail group operating since 2016.',
-    cta: 'Request wholesale account', cta2: 'View categories', proof: 'Serving 4 active markets',
-    leg1t: 'HQ · USA', leg1: 'U.S. sourcing, sales and export logistics.',
-    leg2t: 'HQ · LATAM', leg2c: 'Panama City', leg2: 'Retail operations and regional distribution.', chipCons: 'LATAM consolidation',
-    s1: 'Active SKUs', s2: 'Operating since', s3: 'Retail stores in Panama', s4: 'HQs: Miami & Panama',
-    catL: 'Product categories', catH: 'What we supply', catP: 'A multi-category portfolio of consumer goods, available in wholesale volumes for retail and distribution.',
-    catTag: 'Wholesale volume',
-    quote: '<strong>We run our own stores.</strong> We know what sells through, what sits on the shelf, and what a buyer needs to reorder with confidence.',
+    badge: 'Buying in volume from authorized brands',
+    h1: 'Consumer brands, in our stores and online.',
+    leadB: 'An omnichannel retailer operating from Miami, Panama and Bogotá.',
+    lead: ' We sell 1,500+ SKUs directly to consumers through 3 retail stores in Panama (BYGGA Retail Group), our own online store and Amazon.',
+    cta: 'Supplier inquiries', cta2: 'View categories', proof: 'Selling in 4 active markets',
+    leg1t: 'HQ · USA', leg1: 'Purchasing, e-commerce and Amazon operations.',
+    leg2t: 'HQ · LATAM', leg2c: 'Panama City', leg2: 'Three retail stores through BYGGA Retail Group.',
+    leg3t: 'HQ · Colombia', leg3: 'Business Structuring &amp; Development Office.',
+    chipPO: 'POs $5,000+', chipRx: 'Miami receiving', chipCons: 'Panama store replenishment',
+    s1: 'Active SKUs', s2: 'Operating since', s3: 'Retail stores in Panama', s4: 'Offices: Miami, Panama &amp; Bogotá',
+    catL: 'Product categories', catH: 'What we sell', catP: 'A multi-category consumer assortment, sold through our stores in Panama, our own online store and Amazon.',
+    catTag: 'Stores + online',
+    quote: '<strong>We run our own stores.</strong> We know what sells through, what sits on the shelf, and we reorder with confidence.',
     quoteBy: 'Part of BYGGA Retail Group',
-    whyL: 'Why buy from us', whyH: 'A wholesale partner built for long-term supply', mktL: 'Markets we serve',
-    aboutL: 'About us', aboutH: 'An established wholesaler with real retail roots.',
-    about1: '<strong>ECOHAVEN GROUP LLC is a wholesale distribution company</strong> serving business buyers in the United States and Latin America.',
-    about2: '<strong>We source from authorized U.S. distributors and brands</strong> and resell in volume to retailers, distributors and e-commerce operators.',
-    about3: '<strong>Our group has operated in Panama since 2016</strong> with three physical stores and online sales, so we understand assortment and sell-through.',
-    procL: 'How we work', procH: 'Simple process. Documented supply.', procP: 'From first inquiry to dispatch in four steps.',
-    termsL: 'Wholesale terms', termsH: 'Clear terms, from the first order.',
-    p1t: 'Wholesale account', p1b: 'Accounts open', p1u: 'minimum per order', p1d: 'For retailers, distributors and online sellers buying in volume.', p1c: 'Request account',
-    p2t: 'LATAM consolidation', p2p: 'On request', p2d: 'For buyers in Central and South America who need consolidated freight.', p2c: 'Get a quote',
-    docL: 'Compliance', docH: 'Fully documented and ready to onboard', docP: 'We work through formal channels. Documentation is available to vendors and buyers on request.',
+    whyL: 'Why brands work with us', whyH: 'A retail partner built for long-term purchasing', mktL: 'Where we sell',
+    aboutL: 'About us', aboutH: 'An established omnichannel retailer.',
+    about1: '<strong>ECOHAVEN GROUP LLC is an omnichannel retailer</strong> selling consumer brands in the United States and Latin America.',
+    about2: '<strong>We buy from authorized U.S. distributors and brands</strong> in volume, from $5,000 per purchase order, and sell directly to consumers through our stores, our own online store and Amazon.',
+    about3: '<strong>Our group has operated in Panama since 2016</strong> with three physical stores through BYGGA Retail Group. We also maintain operations and offices in Bogotá, Colombia, home to our Business Structuring &amp; Development Office.',
+    procL: 'How we work', procH: 'Simple process. Documented purchasing.', procP: 'How we open accounts with new suppliers, in four steps.',
+    termsL: 'Purchasing terms', termsH: 'Clear terms, from the first order.',
+    p1t: 'Volume purchasing', p1b: 'Buying now', p1u: 'per purchase order', p1d: 'For authorized distributors and brands supplying our stores and online channels.', p1c: 'Contact purchasing',
+    p2t: 'Panama replenishment', p2p: 'In-house', p2d: 'Inventory for our Panama stores is consolidated in Miami and shipped to Panama by our own team.', p2c: 'Contact us',
+    docL: 'Compliance', docH: 'Fully documented and ready to onboard', docP: 'We work through formal channels. Documentation is available to suppliers on request.',
     faqH: 'Your questions, answered.',
-    ctaH: 'Ready to stock your shelves? Open a wholesale account today.', ctaB: 'Start inquiry',
-    formL: 'Wholesale inquiry', big1: "Let's", big2: 'your business.', rot: ['supply', 'stock', 'grow'],
-    emailL: 'Email', hqL: 'Headquarters', hqV: 'Miami, FL · Panama City',
-    fName: 'Full name', fCompany: 'Company name', fEmail: 'Email', fPhone: 'Phone', fCat: 'Category of interest', fVol: 'Estimated monthly volume', fMsg: 'Message', submit: 'Submit inquiry',
-    okH: 'Inquiry received', okP: 'Thank you. Our sales team will reply within two business days.',
+    ctaH: 'Supplying consumer brands? Let’s open an account.', ctaB: 'Start inquiry',
+    formL: 'Supplier inquiry', big1: "Let's", big2: 'together.', rot: ['work', 'grow', 'build'],
+    emailL: 'Corporate email', hqL: 'U.S. headquarters', paL: 'Panama', paV: 'Panama City · 3 retail stores (BYGGA Retail Group)', coV: 'Bogotá · Business Structuring &amp; Development Office',
+    footOff: 'Panama City, Panama · Bogotá, Colombia',
+    fName: 'Full name', fCompany: 'Company name', fEmail: 'Email', fPhone: 'Phone', fCat: 'Category you supply', fVol: 'Brands you carry', fMsg: 'Message', submit: 'Submit inquiry',
+    okH: 'Inquiry received', okP: 'Thank you. Our purchasing team will reply within two business days.',
     err: 'Your inquiry could not be sent. Please email sales@ecohaven.co or message us on WhatsApp.',
     copy: '© 2026 ECOHAVEN GROUP LLC. All rights reserved. Part of BYGGA Retail Group.',
-    cats: [['Health & Beauty','Skincare, cosmetics, vitamins and wellness.'],['Personal Care','Hygiene, grooming and daily-use essentials.'],['Grocery & Gourmet','Shelf-stable foods, snacks and specialty goods.'],['Pet Supplies','Pet food, care and accessories.'],['Home & Kitchen','Housewares, cleaning and small kitchen goods.'],['Office Products','Stationery, supplies and consumables.']],
-    why: [['Established retail group','Backed by a retail group operating stores and online sales in Panama since 2016.'],['U.S. LLC with full documentation','Registered U.S. company with EIN, resale certificate and U.S. banking.'],['Long-term wholesale relationships','Recurring supply programs and consistent replenishment, not one-off deals.'],['Multi-channel distribution','Product moves through retail, wholesale and online channels across the region.']],
+    cats: [['Toys, Collectibles & Family Entertainment','Toys, building sets, collectibles, games and family entertainment for our stores and online channels.',6],['Health & Beauty','Skincare, cosmetics, vitamins and wellness.'],['Personal Care','Hygiene, grooming and daily-use essentials.'],['Grocery & Gourmet','Shelf-stable foods, snacks and specialty goods.'],['Pet Supplies','Pet food, care and accessories.'],['Home & Kitchen','Housewares, cleaning and small kitchen goods.'],['Office Products','Stationery, supplies and consumables.']],
+    why: [['Established retail group','Three physical stores in Panama through BYGGA Retail Group, operating since 2016.'],['U.S. LLC with full documentation','Registered U.S. company with EIN, Florida resale certificate and U.S. banking.'],['Recurring volume purchasing','Purchase orders from $5,000 with consistent replenishment, not one-off deals.'],['Direct-to-consumer sales','Product is sold to end consumers in our own stores, our online store and Amazon.']],
     markets: [['United States','Active'],['Panama','Active'],['Costa Rica','Active'],['Colombia','Active'],['Central America','Expanding']],
-    hist: [['Wholesale distribution, Miami','Today'],['Online sales channel','Ongoing'],['3 retail stores, Panama','Since 2016']],
-    steps: [['Submit an inquiry','Share your company details, categories and expected volume.'],['Account approval','We verify your business and open your wholesale account.'],['Quote & purchase order','Receive pricing and availability, then confirm your PO from $5,000.'],['Pickup or dispatch','Orders ship EXW Miami or are consolidated for LATAM delivery.']],
-    p1: ['Mixed categories in one order','Pickup EXW Miami by your forwarder','Pricing and availability within two business days','Recurring supply programs'],
-    p2: ['Consolidation in Miami','Regional dispatch through Panama','Quoted per shipment','Same account and documentation'],
+    hist: [['Omnichannel retail, Miami','Today'],['Online store & Amazon','Ongoing'],['Business office, Bogotá','Active'],['3 retail stores, Panama','Since 2016']],
+    steps: [['Share your line','Send your catalog, price list and account requirements.'],['Account onboarding','We provide our LLC, EIN and resale certificate for your credit and account review.'],['Purchase order','We confirm purchase orders from $5,000, with recurring replenishment.'],['Receiving','Orders are received in Miami for our online channels and consolidated for our stores in Panama.']],
+    p1: ['Multiple categories per order','Delivery to our Miami address or pickup arranged by us','Recurring replenishment orders','Full documentation for credit applications'],
+    p2: ['Consolidation in Miami','Dispatch to our stores in Panama','Handled by our own team','Same LLC and documentation'],
     docs: [['U.S. LLC (Florida)','ECOHAVEN GROUP LLC, registered and in good standing.'],['Federal EIN','IRS Employer Identification Number.'],['Florida Resale Certificate','Valid annual resale certificate.'],['Panama Commercial Registration','Licensed retail and commercial operations.']],
-    faq: [['What is the minimum order?','$5,000 per purchase order. You can mix categories to reach it.'],['Where do orders ship from?','Orders are EXW Miami: your freight forwarder picks up from our Miami facility.'],['Do you deliver to Latin America?','Yes. We consolidate in Miami and dispatch regionally through Panama on request.'],['How fast do you respond?','Our sales team replies with pricing, availability and terms within two business days.'],['Which documents can you provide?','Florida LLC registration, federal EIN, Florida resale certificate and Panama commercial registration, on request.']]
+    faq: [['What is your typical order size?','$5,000+ per purchase order, across one or more categories.'],['Who are your customers?','End consumers. We sell through 3 retail stores in Panama (BYGGA Retail Group), our own online store and Amazon.'],['Where do you receive orders?','In Miami, Florida. Inventory for our Panama stores is consolidated in Miami and shipped to Panama.'],['Where are your offices?','Miami, FL (U.S. headquarters, 2 S Biscayne Blvd, Ste 3200), Panama City (retail operations) and Bogotá, Colombia (Business Structuring & Development Office).'],['Which documents can you provide?','Florida LLC registration, federal EIN, Florida resale certificate and Panama commercial registration, on request.']]
   },
   es: {
     nav1: 'Categorías', nav2: 'Por qué nosotros', nav3: 'Condiciones', nav4: 'Preguntas', contactBtn: 'Contacto',
-    badge: 'Abriendo nuevas cuentas mayoristas',
-    h1: 'Marcas de consumo, a volumen mayorista.',
-    leadB: 'Distribución en EE.UU. y Latinoamérica desde Miami y Panamá.',
-    lead: 'Abastecemos a minoristas, distribuidores y vendedores en línea con más de 1,500 SKUs, respaldados por un grupo minorista que opera desde 2016.',
-    cta: 'Solicitar cuenta mayorista', cta2: 'Ver categorías', proof: 'Atendemos 4 mercados activos',
-    leg1t: 'Sede · EE.UU.', leg1: 'Abastecimiento, ventas y logística de exportación.',
-    leg2t: 'Sede · LATAM', leg2c: 'Ciudad de Panamá', leg2: 'Operación retail y distribución regional.', chipCons: 'Consolidación LATAM',
-    s1: 'SKUs activos', s2: 'Operando desde', s3: 'Tiendas físicas en Panamá', s4: 'Sedes: Miami y Panamá',
-    catL: 'Categorías', catH: 'Lo que distribuimos', catP: 'Un portafolio multicategoría de productos de consumo, disponible en volúmenes mayoristas para retail y distribución.',
-    catTag: 'Volumen mayorista',
-    quote: '<strong>Tenemos nuestras propias tiendas.</strong> Sabemos qué rota, qué se queda en el estante y qué necesita un comprador para volver a pedir con confianza.',
+    badge: 'Compramos por volumen a marcas autorizadas',
+    h1: 'Marcas de consumo, en nuestras tiendas y en línea.',
+    leadB: 'Un minorista omnicanal que opera desde Miami, Panamá y Bogotá.',
+    lead: ' Vendemos más de 1,500 SKUs directamente al consumidor en 3 tiendas físicas en Panamá (BYGGA Retail Group), nuestra tienda en línea propia y Amazon.',
+    cta: 'Contacto para proveedores', cta2: 'Ver categorías', proof: 'Vendemos en 4 mercados activos',
+    leg1t: 'Sede · EE.UU.', leg1: 'Compras, e-commerce y operación en Amazon.',
+    leg2t: 'Sede · LATAM', leg2c: 'Ciudad de Panamá', leg2: 'Tres tiendas físicas a través de BYGGA Retail Group.',
+    leg3t: 'Sede · Colombia', leg3: 'Oficina de Estructuración y Desarrollo de Negocios.',
+    chipPO: 'Órdenes desde $5,000', chipRx: 'Recepción en Miami', chipCons: 'Reposición a tiendas en Panamá',
+    s1: 'SKUs activos', s2: 'Operando desde', s3: 'Tiendas físicas en Panamá', s4: 'Sedes: Miami, Panamá y Bogotá',
+    catL: 'Categorías', catH: 'Lo que vendemos', catP: 'Un surtido multicategoría de productos de consumo, vendido en nuestras tiendas en Panamá, nuestra tienda en línea propia y Amazon.',
+    catTag: 'Tiendas + en línea',
+    quote: '<strong>Tenemos nuestras propias tiendas.</strong> Sabemos qué rota, qué se queda en el estante, y reponemos con confianza.',
     quoteBy: 'Parte de BYGGA Retail Group',
-    whyL: 'Por qué comprarnos', whyH: 'Un socio mayorista para el abastecimiento a largo plazo', mktL: 'Mercados que atendemos',
-    aboutL: 'Quiénes somos', aboutH: 'Un mayorista establecido con raíces en el retail.',
-    about1: '<strong>ECOHAVEN GROUP LLC es una empresa de distribución mayorista</strong> que atiende a compradores empresariales en Estados Unidos y Latinoamérica.',
-    about2: '<strong>Compramos a distribuidores y marcas autorizadas en EE.UU.</strong> y vendemos por volumen a minoristas, distribuidores y operadores de e-commerce.',
-    about3: '<strong>Nuestro grupo opera en Panamá desde 2016</strong> con tres tiendas físicas y venta en línea, así que conocemos el surtido y la rotación.',
-    procL: 'Cómo trabajamos', procH: 'Proceso simple. Suministro documentado.', procP: 'De la primera solicitud al despacho en cuatro pasos.',
-    termsL: 'Condiciones mayoristas', termsH: 'Condiciones claras desde el primer pedido.',
-    p1t: 'Cuenta mayorista', p1b: 'Cuentas abiertas', p1u: 'mínimo por orden', p1d: 'Para minoristas, distribuidores y vendedores en línea que compran por volumen.', p1c: 'Solicitar cuenta',
-    p2t: 'Consolidación LATAM', p2p: 'Bajo solicitud', p2d: 'Para compradores en Centro y Sudamérica que necesitan carga consolidada.', p2c: 'Pedir cotización',
-    docL: 'Cumplimiento', docH: 'Totalmente documentados y listos para operar', docP: 'Trabajamos por canales formales. La documentación está disponible para proveedores y compradores bajo solicitud.',
+    whyL: 'Por qué las marcas trabajan con nosotros', whyH: 'Un socio minorista para compras a largo plazo', mktL: 'Dónde vendemos',
+    aboutL: 'Quiénes somos', aboutH: 'Un minorista omnicanal establecido.',
+    about1: '<strong>ECOHAVEN GROUP LLC es un minorista omnicanal</strong> que vende marcas de consumo en Estados Unidos y Latinoamérica.',
+    about2: '<strong>Compramos a distribuidores y marcas autorizadas en EE.UU.</strong> por volumen, desde $5,000 por orden, y vendemos directamente al consumidor en nuestras tiendas, nuestra tienda en línea propia y Amazon.',
+    about3: '<strong>Nuestro grupo opera en Panamá desde 2016</strong> con tres tiendas físicas a través de BYGGA Retail Group. También mantenemos operaciones y sede en Bogotá, Colombia, donde está nuestra Oficina de Estructuración y Desarrollo de Negocios.',
+    procL: 'Cómo trabajamos', procH: 'Proceso simple. Compras documentadas.', procP: 'Cómo abrimos cuenta con nuevos proveedores, en cuatro pasos.',
+    termsL: 'Condiciones de compra', termsH: 'Condiciones claras desde el primer pedido.',
+    p1t: 'Compras por volumen', p1b: 'Comprando ahora', p1u: 'por orden de compra', p1d: 'Para distribuidores y marcas autorizadas que abastecen nuestras tiendas y canales en línea.', p1c: 'Contactar a compras',
+    p2t: 'Reposición en Panamá', p2p: 'Propia', p2d: 'El inventario de nuestras tiendas en Panamá se consolida en Miami y lo envía nuestro propio equipo.', p2c: 'Contáctenos',
+    docL: 'Cumplimiento', docH: 'Totalmente documentados y listos para operar', docP: 'Trabajamos por canales formales. La documentación está disponible para proveedores bajo solicitud.',
     faqH: 'Sus preguntas, respondidas.',
-    ctaH: '¿Listo para surtir sus estantes? Abra hoy su cuenta mayorista.', ctaB: 'Empezar solicitud',
-    formL: 'Solicitud mayorista', big1: 'Hagamos', big2: 'crecer su negocio.', rot: ['juntos', 'equipo', 'volumen'],
-    emailL: 'Correo', hqL: 'Sedes', hqV: 'Miami, FL · Ciudad de Panamá',
-    fName: 'Nombre completo', fCompany: 'Empresa', fEmail: 'Correo electrónico', fPhone: 'Teléfono', fCat: 'Categoría de interés', fVol: 'Volumen mensual estimado', fMsg: 'Mensaje', submit: 'Enviar solicitud',
-    okH: 'Solicitud recibida', okP: 'Gracias. Nuestro equipo de ventas le responderá en dos días hábiles.',
+    ctaH: '¿Distribuye marcas de consumo? Abramos una cuenta.', ctaB: 'Empezar solicitud',
+    formL: 'Contacto para proveedores', big1: 'Hagamos', big2: 'juntos.', rot: ['negocios', 'equipo', 'crecer'],
+    emailL: 'Correo corporativo', hqL: 'Sede en EE.UU.', paL: 'Panamá', paV: 'Ciudad de Panamá · 3 tiendas físicas (BYGGA Retail Group)', coV: 'Bogotá · Oficina de Estructuración y Desarrollo de Negocios',
+    footOff: 'Ciudad de Panamá, Panamá · Bogotá, Colombia',
+    fName: 'Nombre completo', fCompany: 'Empresa', fEmail: 'Correo electrónico', fPhone: 'Teléfono', fCat: 'Categoría que distribuye', fVol: 'Marcas que maneja', fMsg: 'Mensaje', submit: 'Enviar solicitud',
+    okH: 'Solicitud recibida', okP: 'Gracias. Nuestro equipo de compras le responderá en dos días hábiles.',
     err: 'No se pudo enviar su solicitud. Escríbanos a sales@ecohaven.co o por WhatsApp.',
     copy: '© 2026 ECOHAVEN GROUP LLC. Todos los derechos reservados. Parte de BYGGA Retail Group.',
-    cats: [['Salud y Belleza','Cuidado de la piel, cosméticos, vitaminas y bienestar.'],['Cuidado Personal','Higiene, aseo y artículos de uso diario.'],['Alimentos y Gourmet','Alimentos no perecederos, snacks y especialidades.'],['Mascotas','Alimento, cuidado y accesorios para mascotas.'],['Hogar y Cocina','Artículos del hogar, limpieza y cocina.'],['Productos de Oficina','Papelería, suministros y consumibles.']],
-    why: [['Grupo minorista establecido','Respaldados por un grupo con tiendas y venta en línea en Panamá desde 2016.'],['LLC en EE.UU. con documentación completa','Empresa registrada en EE.UU. con EIN, certificado de reventa y banca local.'],['Relaciones mayoristas a largo plazo','Programas de suministro recurrente y reposición constante, no ventas puntuales.'],['Distribución multicanal','Producto que se mueve por retail, mayoreo y canales en línea en toda la región.']],
+    cats: [['Juguetes, Coleccionables y Entretenimiento Familiar','Juguetes, sets de construcción, coleccionables, juegos y entretenimiento familiar para nuestras tiendas y canales en línea.',6],['Salud y Belleza','Cuidado de la piel, cosméticos, vitaminas y bienestar.'],['Cuidado Personal','Higiene, aseo y artículos de uso diario.'],['Alimentos y Gourmet','Alimentos no perecederos, snacks y especialidades.'],['Mascotas','Alimento, cuidado y accesorios para mascotas.'],['Hogar y Cocina','Artículos del hogar, limpieza y cocina.'],['Productos de Oficina','Papelería, suministros y consumibles.']],
+    why: [['Grupo minorista establecido','Tres tiendas físicas en Panamá a través de BYGGA Retail Group, operando desde 2016.'],['LLC en EE.UU. con documentación completa','Empresa registrada en EE.UU. con EIN, certificado de reventa de Florida y banca local.'],['Compras recurrentes por volumen','Órdenes desde $5,000 con reposición constante, no compras puntuales.'],['Venta directa al consumidor','El producto se vende al consumidor final en nuestras tiendas, nuestra tienda en línea y Amazon.']],
     markets: [['Estados Unidos','Activo'],['Panamá','Activo'],['Costa Rica','Activo'],['Colombia','Activo'],['Centroamérica','En expansión']],
-    hist: [['Distribución mayorista, Miami','Hoy'],['Canal de venta en línea','Activo'],['3 tiendas físicas, Panamá','Desde 2016']],
-    steps: [['Envíe su solicitud','Comparta datos de su empresa, categorías y volumen estimado.'],['Aprobación de cuenta','Verificamos su empresa y abrimos su cuenta mayorista.'],['Cotización y orden','Reciba precios y disponibilidad, y confirme su orden desde $5,000.'],['Retiro o despacho','Órdenes EXW Miami o consolidadas para entrega en LATAM.']],
-    p1: ['Categorías mixtas en una orden','Retiro EXW Miami por su agente de carga','Precios y disponibilidad en dos días hábiles','Programas de suministro recurrente'],
-    p2: ['Consolidación en Miami','Despacho regional vía Panamá','Cotización por embarque','Misma cuenta y documentación'],
+    hist: [['Retail omnicanal, Miami','Hoy'],['Tienda en línea y Amazon','Activo'],['Oficina de negocios, Bogotá','Activa'],['3 tiendas físicas, Panamá','Desde 2016']],
+    steps: [['Comparta su línea','Envíe su catálogo, lista de precios y requisitos de cuenta.'],['Apertura de cuenta','Le entregamos nuestra LLC, EIN y certificado de reventa para su revisión de crédito y cuenta.'],['Orden de compra','Confirmamos órdenes desde $5,000, con reposición recurrente.'],['Recepción','Recibimos en Miami para nuestros canales en línea y consolidamos para nuestras tiendas en Panamá.']],
+    p1: ['Varias categorías por orden','Entrega en nuestra dirección de Miami o retiro coordinado por nosotros','Órdenes de reposición recurrentes','Documentación completa para solicitudes de crédito'],
+    p2: ['Consolidación en Miami','Despacho a nuestras tiendas en Panamá','A cargo de nuestro propio equipo','Misma LLC y documentación'],
     docs: [['LLC en EE.UU. (Florida)','ECOHAVEN GROUP LLC, registrada y en regla.'],['EIN federal','Número de Identificación del Empleador (IRS).'],['Certificado de reventa de Florida','Certificado de reventa anual vigente.'],['Registro comercial en Panamá','Operación comercial y retail con licencia.']],
-    faq: [['¿Cuál es el pedido mínimo?','$5,000 por orden de compra. Puede combinar categorías para alcanzarlo.'],['¿Desde dónde se despachan las órdenes?','Las órdenes son EXW Miami: su agente de carga retira en nuestra instalación de Miami.'],['¿Entregan en Latinoamérica?','Sí. Consolidamos en Miami y despachamos a la región vía Panamá bajo solicitud.'],['¿Qué tan rápido responden?','Nuestro equipo de ventas responde con precios, disponibilidad y condiciones en dos días hábiles.'],['¿Qué documentos pueden entregar?','Registro de la LLC en Florida, EIN federal, certificado de reventa de Florida y registro comercial en Panamá, bajo solicitud.']]
+    faq: [['¿Cuál es su tamaño de orden habitual?','Desde $5,000 por orden de compra, en una o varias categorías.'],['¿Quiénes son sus clientes?','El consumidor final. Vendemos en 3 tiendas físicas en Panamá (BYGGA Retail Group), nuestra tienda en línea propia y Amazon.'],['¿Dónde reciben la mercancía?','En Miami, Florida. El inventario de nuestras tiendas en Panamá se consolida en Miami y se envía a Panamá.'],['¿Dónde están sus oficinas?','Miami, FL (sede en EE.UU., 2 S Biscayne Blvd, Ste 3200), Ciudad de Panamá (operación retail) y Bogotá, Colombia (Oficina de Estructuración y Desarrollo de Negocios).'],['¿Qué documentos pueden entregar?','Registro de la LLC en Florida, EIN federal, certificado de reventa de Florida y registro comercial en Panamá, bajo solicitud.']]
   }
 };
 
@@ -565,7 +585,8 @@ function render() {
   document.documentElement.lang = lang;
   document.querySelectorAll('[data-i]').forEach((el) => { const v = t[el.dataset.i]; if (typeof v === 'string') el.innerHTML = v; });
   document.querySelectorAll('.lang button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
-  $('cats').innerHTML = t.cats.map((c, i) => `<article class="cat"><div class="cat-art"><span class="sku">0${i + 1} / 06</span><svg viewBox="0 0 64 64" aria-hidden="true">${ICONS[i]}</svg></div><h3>${esc(c[0])}</h3><p>${esc(c[1])}</p><span class="tag">${t.catTag}</span></article>`).join('');
+  const nn = (n) => String(n).padStart(2, '0');
+  $('cats').innerHTML = t.cats.map((c, i) => `<article class="cat${c[2] ? ' feat' : ''}"><div class="cat-art"><span class="sku">${nn(i + 1)} / ${nn(t.cats.length)}</span><svg viewBox="0 0 64 64" aria-hidden="true">${ICONS[c[2] !== undefined ? c[2] : i - 1]}</svg></div><h3>${esc(c[0])}</h3><p>${esc(c[1])}</p><span class="tag">${t.catTag}</span></article>`).join('');
   $('why-list').innerHTML = t.why.map((w) => `<div class="why-item"><h3>${esc(w[0])}</h3><p>${esc(w[1])}</p></div>`).join('');
   $('markets').innerHTML = t.markets.map((m, i) => `<span class="chip">${esc(m[0])}<em class="${i === 4 ? 'exp' : ''}">${esc(m[1])}</em></span>`).join('');
   $('hist').innerHTML = t.hist.map((h) => `<div><span>${esc(h[0])}</span><span>${esc(h[1])}</span></div>`).join('');
