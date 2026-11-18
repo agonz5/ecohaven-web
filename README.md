@@ -2,10 +2,9 @@
 
 Sitio estático (HTML + JavaScript), listo para publicar en Netlify sin paso de compilación.
 
-- `index.html`: página principal (diseño estilo Launchfolio, bilingüe EN/ES, HTML y CSS sin dependencias).
-- `opcion-b.html` y `opcion-original.html`: diseños anteriores, para comparar. No aparecen en Google.
+- `index.html`: página principal (diseño estilo Launchfolio, bilingüe EN/ES, HTML y CSS sin dependencias). Presenta a EcoHaven como minorista omnicanal (tiendas en Panamá, tienda en línea propia y Amazon).
 - `assets/`: logos.
-- El formulario de cuentas mayoristas usa Netlify Forms (formulario `mayoreo`). Las solicitudes llegan al panel de Netlify, en Forms, y se pueden reenviar por correo a sales@ecohaven.co.
+- El formulario de contacto para proveedores usa Netlify Forms (formulario `mayoreo`). Las solicitudes llegan al panel de Netlify, en Forms, y se pueden reenviar por correo a sales@ecohaven.co.
 
 ## Publicar
 1. En Netlify: Add new site → Import an existing project → GitHub → `ecohaven-web`. Sin comando de build; carpeta de publicación `.`.
